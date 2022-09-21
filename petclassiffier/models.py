@@ -7,3 +7,4 @@ class mlModels(models.Model):
     architecture = models.FileField(upload_to= 'mlmodels/')
     weigths = models.FileField(upload_to = 'mlmodels/')
     priority = models.PositiveSmallIntegerField(null=True)
+    selected = models.BooleanField(default=False)

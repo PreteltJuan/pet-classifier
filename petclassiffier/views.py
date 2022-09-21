@@ -6,7 +6,7 @@ import tensorflow as tf
 from tensorflow import keras
 
 def home(request):
-    petclassiffierFiles = mlModels.objects.filter(priority=3)[0]
+    petclassiffierFiles = mlModels.objects.filter(selected=True)[0]
     path_arch = petclassiffierFiles.architecture.path
     path_weights = petclassiffierFiles.weigths.path
 
